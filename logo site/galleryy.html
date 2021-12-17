@@ -1,0 +1,56 @@
+<!DOCTYPE hmtl>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<title>Image Gallery</title>
+	<link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+<div class="banner">
+		<div class="navbar">
+			<a href="home.html"><img src="logo.png" class="logo" alt="theegallery"></a>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="galleryy.html">Gallery</a></li>
+				<li><a href="contact2.html">Contact</a></li>
+			</ul>
+		</div>
+		
+<div class="conntent">
+	<h1>PORTFOLIO</h1>
+
+	<div class="full-img" id="fullImgBox">
+		<img src="images/pic1-small.jpg" id="fullImg" alt="logo">
+		<span onclick="closeFullImg()">X</span>
+	</div>
+	<div class="img-gallery"> 
+		<img src="images/pic1-small.jpg" onclick="openFullImg(this.src)" alt="logo">
+		<img src="images/pic2-small.jpg" onclick="openFullImg(this.src)" alt="logo">
+		<img src="images/pic3-small.jpg" onclick="openFullImg(this.src)" alt="logo">
+		<img src="images/pic4-small.jpg" onclick="openFullImg(this.src)" alt="logo">
+		<img src="images/pic5-small.jpg" onclick="openFullImg(this.src)" alt="logo">
+		<img src="images/pic6-small.jpg" onclick="openFullImg(this.src)" alt="logo">
+		<img src="images/pic7-small.jpg" onclick="openFullImg(this.src)" alt="logo">
+		<img src="images/pic8-small.jpg" onclick="openFullImg(this.src)" alt="logo">
+		<img src="images/pic9-small.jpg" onclick="openFullImg(this.src)" alt="logo">
+	</div>
+</div>
+</div>
+
+<script>
+
+var fullImgBox = document.getElementById("fullImgBox");
+var fullImg = document.getElementById("fullImg");
+
+function openFullImg(pic){
+	fullImgBox.style.display = "flex";
+	fullImg.src = pic;
+}
+
+function closeFullImg(){
+	fullImgBox.style.display = "none";
+}
+
+</script>
+</body>
+</html>
